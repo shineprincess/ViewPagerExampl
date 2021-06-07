@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ViewPager</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="running">Running</string>
+    <string name="next">Next</string>
+    <string name="svanasana">Svanasana</string>
+    <string name="side_bends">Side Bends</string>
+</resources>

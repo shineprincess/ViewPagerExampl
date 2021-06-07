@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.shineprincess.viewpager.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment"
+            app:popUpTo="@id/splashFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeExerciseFragment"
+            app:destination="@id/homeExerciseFragment"
+            app:popUpTo="@id/splashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.shineprincess.viewpager.onboarding.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_homeExerciseFragment"
+            app:destination="@id/homeExerciseFragment"
+            app:popUpTo="@id/viewPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeExerciseFragment"
+        android:name="com.shineprincess.viewpager.HomeExerciseFragment"
+        android:label="fragment_home_exercise"
+        tools:layout="@layout/fragment_home_exercise" />
+</navigation>
